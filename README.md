@@ -7,7 +7,7 @@
 [![License](http://img.shields.io/npm/l/generator-lingyu-react-component.svg?style=flat-square)](LICENSE)
 [![npm download](https://img.shields.io/npm/dm/generator-lingyu-react-component.svg?style=flat-square)](https://npmjs.org/package/generator-lingyu-react-component)
 
-> An UMD react component generator of Yeoman, babel+webpack+less+mocha+istanbul
+> An UMD react component generator of Yeoman
 
 ## Installation
 
