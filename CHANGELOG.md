@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.0.4
+
+* Fix description in README.md
+
 ## 0.0.3
 
 * Change deprecated gulp-webpack to webpack-stream

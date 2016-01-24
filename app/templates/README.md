@@ -9,7 +9,7 @@
 [![License](http://img.shields.io/npm/l/<%= name %>.svg?style=flat-square)](LICENSE)
 [![npm download](https://img.shields.io/npm/dm/<%= name %>.svg?style=flat-square)](https://npmjs.org/package/<%= name %>)
 
-> Select
+> <%= description %>
 
 ## Installation
 
