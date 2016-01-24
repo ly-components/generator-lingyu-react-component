@@ -11,6 +11,10 @@
 
 > <%= description %>
 
+## Demo
+
+[Demo here](http://<%= author %>.github.io/<%= name %>/demo/index.html)
+
 ## Installation
 
 ```bash
@@ -34,11 +38,15 @@ import <%= component %> from '<%= name %>';
 
 ## Development
 
+[Online test page here](http://<%= author %>.github.io/<%= name %>/test/test.html)
+
 ```bash
 $ npm run dev # startup local dev server
 $ npm run build # build
 $ npm run test # run tests
 $ npm run cov # run coverage
+$ npm run build-demo # build demo, auto run in 'npm run build'
+$ npm run build-test # build test, auto run in 'npm run build'
 ```
 
 ## License

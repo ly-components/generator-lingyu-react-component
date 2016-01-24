@@ -7,7 +7,9 @@
     "dev": "gulp dev",
     "build": "gulp",
     "test": "gulp test",
-    "cov": "gulp coverage"
+    "cov": "gulp coverage",
+    "build-demo": "gulp demo",
+    "build-test": "gulp pre-test"
   },
   "author": "<%= author %>",
   "license": "MIT",
@@ -32,6 +34,7 @@
     "istanbul": "^0.4.2",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
+    "loader-utils": "^0.2.12",
     "mocha": "^2.3.4",
     "mocha-phantomjs": "^4.0.2",
     "mocha-phantomjs-coverage-hook": "0.0.1",

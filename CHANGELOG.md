@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.0.5
+
+* Add online demo page and online test page into README.md
+
 ## 0.0.4
 
 * Fix description in README.md
