@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.0.6
+
+* npm run test will not clean dist any more
+
 ## 0.0.5
 
 * Add online demo page and online test page into README.md
