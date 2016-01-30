@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.0.7
+
+* Fix build error when component import other components from node_modules
+
 ## 0.0.6
 
 * npm run test will not clean dist any more
