@@ -2,7 +2,7 @@
 
 ## 0.0.7
 
-* Fix build error when component import other components from node_modules
+* Fix dev error when import components from node_modules (issues #1)
 
 ## 0.0.6
 
