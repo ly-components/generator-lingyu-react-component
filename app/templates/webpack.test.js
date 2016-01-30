@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 const webpack = require('webpack');
 module.exports = {
@@ -16,12 +17,15 @@ module.exports = {
     })
   ],
   postcss: [require('autoprefixer')],
+  resolve: {
+    modulesDirectories: ['node_modules', './src', './test'],
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       loaders: ['babel'],
-      exclude: [path.resolve('src/')],
-      include: [path.join(__dirname, 'test')]
+      exclude: [path.resolve('src/')]
     }, {
       test: /\.jsx?$/,
       include: [path.resolve('src/')],

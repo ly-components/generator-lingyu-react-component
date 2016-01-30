@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 const webpack = require('webpack');
 module.exports = {
@@ -9,7 +10,8 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: {
-    react: 'React'
+    react: 'React',
+    'react-dom': 'ReactDOM'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -25,11 +27,14 @@ module.exports = {
     })
   ],
   postcss: [require('autoprefixer')],
+  resolve: {
+    modulesDirectories: ['node_modules', './src'],
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [{
       test: /\.jsx?/,
-      loaders: ['babel'],
-      include: [path.join(__dirname, 'src')]
+      loaders: ['babel']
     }, {
       test: /\.less/,
       loaders: ['style', 'css', 'postcss', 'less']
