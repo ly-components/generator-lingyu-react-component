@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.0.8
+
+* Add fork ribbon to demo page
+
 ## 0.0.7
 
 * Fix dev error when import components from node_modules (issues #1)
