@@ -1,6 +1,6 @@
 {
   "name": "generator-lingyu-react-component",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "An UMD react component generator of Yeoman",
   "homepage": "https://github.com/LingyuCoder/generator-lingyu-react-component",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
@@ -19,7 +19,8 @@
     "babel",
     "less",
     "mocha",
-    "istanbul"
+    "istanbul",
+    "karma"
   ],
   "dependencies": {
     "camel-case": "^1.2.2",

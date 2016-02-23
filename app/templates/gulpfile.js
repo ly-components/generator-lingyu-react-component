@@ -1,3 +1,4 @@
+'use strict';
 const webpack = require('webpack');
 const gulpWebpack = require('webpack-stream');
 const open = require('open');
@@ -8,14 +9,8 @@ const del = require('del');
 const env = require('gulp-env');
 const insert = require('gulp-insert-md');
 const tablify = require('react-prop-table');
-const execSync = require('child_process').execSync;
-const cmd = command => execSync(command, {
-  stdio: 'inherit'
-});
 
 gulp.task('clean', cb => del(['dist'], cb));
-
-gulp.task('clean-test', cb => del(['coverage'], cb));
 
 gulp.task('build', ['clean'], () => {
   return gulp.src('./src/index.jsx')
@@ -61,25 +56,6 @@ gulp.task('dev', cb => {
   });
 });
 
-gulp.task('pre-test', ['clean-test'], () => {
-  return gulp.src('./test/test.jsx')
-    .pipe(env.set({
-      NODE_ENV: 'test'
-    }))
-    .pipe(gulpWebpack(require('./webpack.test')))
-    .pipe(gulp.dest('test'));
-});
-
-gulp.task('test', ['pre-test'], () => {
-  cmd('./node_modules/.bin/mocha-phantomjs ./test/test.html');
-});
-
-gulp.task('coverage', ['pre-test'], () => {
-  cmd('./node_modules/.bin/mocha-phantomjs ./test/test.html --hooks ./node_modules/mocha-phantomjs-coverage-hook/index.js');
-  cmd('./node_modules/.bin/istanbul report --root coverage lcov');
-  cmd('./node_modules/.bin/istanbul report --root coverage text-summary');
-});
-
 gulp.task('doc', function() {
   return gulp.src(['README.md'])
     .pipe(insert({
@@ -88,4 +64,4 @@ gulp.task('doc', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['pre-test', 'build', 'doc', 'demo']);
+gulp.task('default', ['build', 'doc', 'demo']);

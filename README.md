@@ -9,6 +9,18 @@
 
 > An UMD react component generator of Yeoman
 
+* React
+* ES6 with Babel
+* Webpack for building
+* Less and PostCSS
+* webpack-dev-middleware for local server
+* webpack-hot-middleware for hot replacement
+* Mocha, Should.js and PhantomJS for unit testing
+* Karma for cross-browser testing
+* isparta-loader for code coverage
+
+
+
 ## Installation
 
 ```bash
@@ -24,8 +36,8 @@ $ yo lingyu-react-component
 $ npm install # install the dependencies
 $ npm run dev # startup local dev server
 $ npm run build # build to ./dist
-$ npm run test # run tests
-$ npm run cov # code coverage
+$ npm run test # run test and coverage
+$ npm run build-demo # only build demo
 ```
 
 ## License

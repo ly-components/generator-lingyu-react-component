@@ -2,7 +2,6 @@
 
 const capitalize = require('capitalize');
 const camelCase = require('camel-case');
-const DIRECTORIES = [];
 const FILES = [
   '.babelrc',
   '.eslintrc',
@@ -13,13 +12,12 @@ const FILES = [
   'README.md',
   'src/index.jsx',
   'src/index.less',
-  'test/test.jsx',
-  'test/test.html',
+  'test/index_spec.jsx',
   'demo/index.jsx',
   'demo/index.html',
   'webpack.dev.js',
   'webpack.pub.js',
-  'webpack.test.js'
+  'karma.conf.js'
 ];
 
 module.exports = (appname) => {

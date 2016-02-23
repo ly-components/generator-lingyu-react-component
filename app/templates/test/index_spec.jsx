@@ -3,7 +3,6 @@ import <%= component %> from '../src/index.jsx';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-mocha.ui('bdd');
 describe('test', function() {
   const container = document.createElement('div');
   document.body.appendChild(container);
@@ -19,8 +18,3 @@ describe('test', function() {
     TestUtils.isElement(cp).should.be.true();
   });
 });
-if (window.mochaPhantomJS) {
-  window.mochaPhantomJS.run();
-} else {
-  mocha.run();
-}
