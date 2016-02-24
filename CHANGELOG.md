@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.1.1
+
+* Fix travis
+
 ## 0.1.0
 
 * Add Karma for cross-browser testing
