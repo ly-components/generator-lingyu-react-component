@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.1.0
+
+* Add Karma for cross-browser testing
+
 ## 0.0.8
 
 * Add fork ribbon to demo page
