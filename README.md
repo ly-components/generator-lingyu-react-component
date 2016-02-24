@@ -19,8 +19,6 @@
 * Karma for cross-browser testing
 * isparta-loader for code coverage
 
-
-
 ## Installation
 
 ```bash
