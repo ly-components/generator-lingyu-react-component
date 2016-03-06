@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.1.2
+
+* Fix bug
+
 ## 0.1.1
 
 * Fix travis
