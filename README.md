@@ -1,7 +1,7 @@
 # generator-lingyu-react-component
 
-[![Build Status](https://travis-ci.org/LingyuCoder/generator-lingyu-react-component.png)](https://travis-ci.org/LingyuCoder/generator-lingyu-react-component)
-[![Dependency Status](https://david-dm.org/LingyuCoder/generator-lingyu-react-component.svg)](https://david-dm.org/LingyuCoder/generator-lingyu-react-component)
+[![Build Status](https://travis-ci.org/ly-components/generator-lingyu-react-component.png)](https://travis-ci.org/ly-components/generator-lingyu-react-component)
+[![Dependency Status](https://david-dm.org/ly-components/generator-lingyu-react-component.svg)](https://david-dm.org/ly-components/generator-lingyu-react-component)
 [![NPM version](http://img.shields.io/npm/v/generator-lingyu-react-component.svg?style=flat-square)](http://npmjs.org/package/generator-lingyu-react-component)
 [![node](https://img.shields.io/badge/node.js-%3E=_4.0-green.svg?style=flat-square)](http://nodejs.org/download/)
 [![License](http://img.shields.io/npm/l/generator-lingyu-react-component.svg?style=flat-square)](LICENSE)

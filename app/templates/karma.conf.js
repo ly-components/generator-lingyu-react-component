@@ -1,5 +1,4 @@
 'use strict';
-const webpack = require('karma-webpack');
 const path = require('path');
 
 module.exports = function(config) {
@@ -9,7 +8,7 @@ module.exports = function(config) {
       './node_modules/phantomjs-polyfill/bind-polyfill.js',
       'test/**/*_spec.jsx'
     ],
-    plugins: [webpack, 'karma-mocha', /*'karma-opera-launcher', 'karma-chrome-launcher', 'karma-firefox-launcher',*/ 'karma-phantomjs-launcher', 'karma-coverage', 'karma-spec-reporter'],
+    plugins: ['karma-webpack', 'karma-mocha', /*'karma-opera-launcher', 'karma-chrome-launcher', 'karma-firefox-launcher',*/ 'karma-phantomjs-launcher', 'karma-coverage', 'karma-spec-reporter'],
     browsers: ['PhantomJS'/*, 'Firefox', 'Chrome', 'Opera'*/],
     preprocessors: {
       'test/**/*_spec.jsx': ['webpack']
@@ -18,15 +17,12 @@ module.exports = function(config) {
     coverageReporter: {
       dir: 'coverage',
       reporters: [{
-        type: 'html',
-        subdir: 'report-html'
+        type: 'json',
+        subdir: '.',
+        file: 'coverage.json'
       }, {
         type: 'lcov',
-        subdir: 'report-lcov'
-      }, {
-        type: 'cobertura',
-        subdir: '.',
-        file: 'cobertura.txt'
+        subdir: '.'
       }, {
         type: 'text-summary'
       }]
