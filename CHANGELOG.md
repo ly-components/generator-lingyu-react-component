@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.1.3
+
+* Update react-prop-table, will not generate documentation for private properties any more
+
 ## 0.1.2
 
 * Fix bug
