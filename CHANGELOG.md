@@ -1,5 +1,9 @@
 # generator-lingyu-react-component
 
+## 0.1.4
+
+* remove duplicate 'strict: 0' in .eslintrc
+
 ## 0.1.3
 
 * Update react-prop-table, will not generate documentation for private properties any more

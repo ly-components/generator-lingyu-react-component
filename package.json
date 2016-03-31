@@ -1,6 +1,6 @@
 {
   "name": "generator-lingyu-react-component",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An UMD react component generator of Yeoman",
   "homepage": "https://github.com/ly-components/generator-lingyu-react-component",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
